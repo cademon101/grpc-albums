@@ -1,0 +1,27 @@
+// The syntax version for Protocol Buffers. "proto3" is the latest version.
+syntax = "proto3";
+
+option csharp_namespace = "grpc_albums";
+
+package albums;
+
+// Defines a gRPC service named AlbumService.
+// Each rpc method is a remote procedure call that the server implements.
+service AlbumService {
+  // Defines an RPC method called GetAlbum.
+  // It takes an AlbumRequest message and returns an AlbumReply message.
+  // rpc GetAlbum (AlbumRequest) returns (AlbumReply);
+  rpc CreateProject(Project) returns (projectConfirmation);
+}
+
+message Project {
+    string name = 1;
+    int32 id = 2;
+}
+
+message projectConfirmation {
+    string msg = 1;
+}
+
+//small but complete file, to get it working you gotta include it in server.csproj 
+// we gotta generate C# code that implements these
