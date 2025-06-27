@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("grpc-albums")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03ba49721e8e70bf0f5139e11505d9c25f4e4280")]
 [assembly: System.Reflection.AssemblyProductAttribute("grpc-albums")]
 [assembly: System.Reflection.AssemblyTitleAttribute("grpc-albums")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
