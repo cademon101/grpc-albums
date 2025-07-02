@@ -7,20 +7,26 @@ package albums;
 
 // Defines a gRPC service named AlbumService.
 // Each rpc method is a remote procedure call that the server implements.
-service AlbumService {
+service Albums {
   // Defines an RPC method called GetAlbum.
   // It takes an AlbumRequest message and returns an AlbumReply message.
-  // rpc GetAlbum (AlbumRequest) returns (AlbumReply);
-  rpc CreateProject(Project) returns (projectConfirmation);
+ rpc GetAlbum (AlbumRequest) returns (AlbumReply);
 }
 
-message Project {
-    string name = 1;
-    int32 id = 2;
+
+// Defines the AlbumRequest message.
+// This message is sent by the client to request an album by its ID.
+message AlbumRequest {
+  int32 album_id = 1; // The unique ID of the album being requested.
 }
 
-message projectConfirmation {
-    string msg = 1;
+
+// Defines the AlbumReply message.
+// This message is sent by the server in response to an AlbumRequest.
+message AlbumReply {
+  int32 album_id = 1;   // The unique ID of the album.
+  string title = 2;     // The title of the album.
+  string artist = 3;    // The artist of the album.
 }
 
 //small but complete file, to get it working you gotta include it in server.csproj 

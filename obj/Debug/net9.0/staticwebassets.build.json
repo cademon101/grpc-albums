@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "0LSfYyQSyqxV+zOkd9x2XfORwXJiZ75u1wdxgTS2W9Y=",
+  "Source": "grpc-albums",
+  "BasePath": "_content/grpc-albums",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
